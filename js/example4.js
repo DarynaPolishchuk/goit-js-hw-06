@@ -95,7 +95,8 @@ const users =  [
 ];
 
 // Write code under this line
-const getInactiveUsers = array  => array;
+const getInactiveUsers = array => array.filter(({isActive }) => !isActive);
+  
 
  console.log(getInactiveUsers(users));
 
@@ -137,3 +138,4 @@ const getInactiveUsers = array  => array;
     age: 38,
   }     
 ]; */
+  
